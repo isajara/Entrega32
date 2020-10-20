@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Entrega2</title>
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+</head>
+<script type="text/javascript">
+	function SR() 
+	{
+		document.getElementById('SR').style.display="block";
+		document.getElementById('B').style.display="none";  //PARA QUE APAREZCA LA INFORMACION DE LA SUMA Y LA RESTA
+		document.getElementById('resta').style.display="none";  //PARA QUE APAREZCA LA INFORMACION DE LA SUMA Y LA RESTA
+	}
+
+	function resta()
+	{
+		document.getElementById('B').style.display="none";
+		document.getElementById('SR').style.display="none";
+		document.getElementById('resta').style.display="block";
+	}
+
+	function operacion()
+	{
+		document.getElementById('B').style.display="block";
+		document.getElementById('SR').style.display="none";
+		document.getElementById('resta').style.display="none";  
+	}
+
+	function Limpiar()
+	{
+		document.getElementById('n1').value="";
+		document.getElementById('n2').value=""; 	// ESTO ES EL BOTON DE LIMPIAR
+		document.getElementById('n3').value="";
+		document.getElementById("resultado").innerHTML= "";
+	}
+</script>
+<body>
+	<center>
+		<div class="principal">
+
+			<div class="A">
+				<br><br><br>
+
+				<input type="button" class="A1" onclick="operacion()" value="Suma - Resta">
+					
+															<!-- ESTE ES EL DIV DE LA IZQUIERA -->
+				<br><br><br>
+
+				<input type="button" class="A1"	onclick="SR()" value="¿Qué es?">
+
+			</div>
+
+			<div class="B" id="B">
+				<br>
+				<input type="number" id="n1" class="B1" placeholder="Valor 1" value="" required="">
+
+				<img src="suma.png" style="position: absolute; 	
+								   width: 5%;						
+								   left: 30%;">						<!-- ESTE ES EL DIV DE LA DERECHA-->
+
+				<input type="number" id="n2" class="B2" placeholder="Valor 2" value="" required="">
+
+				<img src="menos.png" style="position: absolute; 	
+								   width: 7%;
+								   top: 5.2%;
+								   left: 65%;">
+
+				<input type="number" id="n3" class="B3" placeholder="Valor 3" value="" required="">
+
+					<br> <br>
+
+				<div class="resultado" id="resultado">
+					<script type="text/javascript">
+						function solucion()
+						{
+							var n1	=	parseInt(document.getElementById('n1').value);
+							var n2	=	parseInt(document.getElementById('n2').value); //El "ParseInt" ES PARA VOLVER LA VARIABLE QUE 																	ESTA EN ESA CASILLA UN NUMERO 
+							var n3	=	parseInt(document.getElementById('n3').value);
+
+							if(n1=="")
+							{
+								alert("El campo 1 esta vacio")
+								var n1=document.getElementById('n1').focus();
+							}
+
+							if(n2=="")
+							{
+								alert("El campo 2 esta vacio")
+								var n2=document.getElementById('n2').focus();
+							}
+
+							if(n3=="")
+							{
+								alert("El campo 3 esta vacio")
+								var n3=document.getElementById('n3').focus();
+							}
+
+							else
+
+								var suma = n1 + n2 - n3;
+								document.getElementById("resultado").innerHTML= "El resultado es: "+suma; 
+						}
+					</script>
+				</div>
+
+					<br>
+				<input type="button" class="solucion" value="Solucionar" onclick="solucion()">
+
+				<input type="button" class="reiniciar" onclick="Limpiar()" value="Limpiar"/>
+			</div>
+
+			<div class="SR" id="SR">
+				<h1>Suma</h1>
+				<p style="text-align: left; width: 90%;"> La adición o suma es la operación matemática de composición que consiste en combinar o añadir dos números o más para obtener una cantidad final o total. La suma también ilustra el proceso de juntar dos colecciones de objetos con el fin de obtener una sola colección.</p>
+				<br>
+				<input type="button" value="Resta" onclick="resta()">
+
+			</div>
+
+			<div class="resta" id="resta">
+				<h1>Resta</h1>
+				<p style="text-align: left; width: 90%;">Básicamente, la operación de la resta consiste en encontrar la diferencia que existe entre dos cantidades. Así 20 – 14 = 6.Cabe destacarse que la operación de la resta se simboliza con el signo menos (-). Formalmente a la primera cantidad se la denomina minuendo, a la que se quiere restar como sustraendo y al resultado se lo llama diferencia. </p>
+				<br>
+				<input type="button" value="Suma" onclick="SR()">
+			</div>
+
+		</div>
+	</center>
+</body>
+</html>

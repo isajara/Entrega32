@@ -1,0 +1,151 @@
+.principal
+{ 
+  background-image: url(1.jpg);
+	border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+ 	border-left-style: solid;
+  border-radius: 8px;
+ 	padding: 5%;
+  height: 550px;
+}
+
+.A
+{
+ 	position: relative;
+  top: -30px;
+ 	width: 35%;
+ 	height: 220px;
+}
+ 
+.B
+{
+  background: #A66B37;
+	border-top-style: solid;
+	border-right-style: solid;
+  border-bottom-style: solid;
+ 	border-left-style: solid;
+  border-radius: 8px;
+
+  display: block;
+
+ 	position: absolute;
+ 	top: 47%;
+ 	left: 21%;
+ 	width: 58.5%;
+ 	height: 320px;
+}
+
+.A1
+{
+	border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+ 	border-left-style: solid;
+
+ 	width: 60%;
+ 	padding: 2%;
+  font-size: 12px;
+}
+
+.B1
+{
+	border-top-style: solid;
+	border-right-style: solid;
+  border-bottom-style: solid;
+ 	border-left-style: solid;
+
+ 	position: relative;
+ 	right: 20%;
+ 	width: 10%;
+ 	padding: 2%;
+}
+
+.B2
+{
+	border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+ 	border-left-style: solid;
+
+ 	position: relative;
+ 	left: 0%;
+ 	width: 10%;
+ 	padding: 2%;
+}
+
+.B3
+{
+	border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+ 	border-left-style: solid;
+
+ 	position: relative;
+ 	left: 20%;
+ 	width: 10%;
+ 	padding: 2%;
+}
+
+.resultado
+{
+	border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+ 	border-left-style: solid;
+
+ 	width: 52%;	
+ 	padding: 10%;
+}
+
+.solucion
+{
+  position: relative;
+  display: block;
+	font-size: 18px;
+	width: 30%;
+}
+
+.reiniciar
+{
+  position: relative;
+  top: -32px;
+  left: 44%;
+  font-family: Times New Roman;
+}
+
+.SR
+{
+  background: #A66B37;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+  display: none;
+
+  position: absolute;
+  padding: 5%;
+  top: 47%;
+  left: 21%;
+  width: 48%;
+  height: 200px;
+}
+
+.resta
+{
+  background: #A66B37;
+  border-top-style: solid;
+  border-right-style: solid;
+  border-bottom-style: solid;
+  border-left-style: solid;
+
+  display: none;
+
+  position: absolute;
+  padding: 5%;
+  top: 47%;
+  left: 21%;
+  width: 48%;
+  height: 200px;
+}
